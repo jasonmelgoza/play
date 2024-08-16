@@ -1,17 +1,11 @@
 module.exports = {
-  components: './src/components',
+  components: './src/components/ui/index.ts',
   outputPath: './dist/playroom',
-
-  // Optional:
-  title: 'My Awesome Library',
-  themes: './src/themes',
-  snippets: './playroom/snippets.js',
-  frameComponent: './playroom/FrameComponent.js',
-  scope: './playroom/useScope.js',
+  frameComponent: './playroom/FrameComponent.tsx',
+  title: 'Play UI Library',
   widths: [320, 768, 1024],
   port: 9000,
   openBrowser: true,
-  paramType: 'search', // default is 'hash'
   exampleCode: `
     <Button>
       Hello World!
@@ -19,13 +13,31 @@ module.exports = {
   `,
   baseUrl: '/playroom/',
   webpackConfig: () => ({
-    // Custom webpack config goes here...
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'babel-loader',
+              options: {
+                babelrc: false,
+                presets: [
+                  '@babel/preset-env',
+                  ['@babel/preset-react', { runtime: 'automatic' }],
+                  '@babel/preset-typescript',
+                ],
+              },
+            },
+          ],
+        },
+        {
+          test: /frame\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
+      ],
+    },
   }),
   iframeSandbox: 'allow-scripts',
-  defaultVisibleWidths: [
-    // subset of widths to display on first load
-  ],
-  defaultVisibleThemes: [
-    // subset of themes to display on first load
-  ],
 };
