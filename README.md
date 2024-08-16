@@ -1,3 +1,3 @@
 # Play UI
 
-A React design system.
+A small React design system.
