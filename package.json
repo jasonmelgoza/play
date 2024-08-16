@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "playroom": "^0.38.0",
+    "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
   },
   "dependencies": {
