@@ -9,7 +9,9 @@
     "playroom:build": "playroom build"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "playroom": "^0.38.0",
+    "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
   },
