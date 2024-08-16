@@ -33,7 +33,8 @@ module.exports = {
           ],
         },
         {
-          test: /frame\.css$/,
+          test: /\.css?$/,
+          exclude: /node_modules/,
           use: ['style-loader', 'css-loader'],
         },
       ],

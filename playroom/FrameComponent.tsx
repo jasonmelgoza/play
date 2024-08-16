@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import '../src/styles/main.css';
 
 interface FrameComponentProps {
   children: ReactNode;
