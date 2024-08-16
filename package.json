@@ -1,0 +1,18 @@
+{
+  "name": "play",
+  "version": "0.1.0",
+  "description": "A React design system",
+  "author": "Jason Melgoza",
+  "license": "MIT",
+  "scripts": {
+    "playroom:start": "playroom start",
+    "playroom:build": "playroom build"
+  },
+  "devDependencies": {
+    "playroom": "^0.38.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "style-loader": "^4.0.0"
+  }
+}
