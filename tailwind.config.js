@@ -3,7 +3,7 @@ module.exports = {
   darkMode: ["class"],
   content: [
     './playroom/*.{ts,tsx}',
-    './components/ui/**/*.{ts,tsx}',
+    './src/components/**/*.{ts,tsx}',
   ],
   prefix: "",
   theme: {

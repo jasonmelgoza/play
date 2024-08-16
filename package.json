@@ -12,6 +12,8 @@
     "autoprefixer": "^10.4.20",
     "playroom": "^0.38.0",
     "postcss": "^8.4.41",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.0.1",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
   },
