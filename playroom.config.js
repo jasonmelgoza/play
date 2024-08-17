@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   components: './src/components/ui/index.ts',
   outputPath: './dist/playroom',
@@ -13,6 +15,12 @@ module.exports = {
   `,
   baseUrl: '/playroom/',
   webpackConfig: () => ({
+    resolve: {
+      alias: {
+        '@lib': path.resolve(__dirname, 'lib'),
+      },
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    },
     module: {
       rules: [
         {
