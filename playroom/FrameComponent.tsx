@@ -6,7 +6,7 @@ interface FrameComponentProps {
 }
 
 const FrameComponent: React.FC<FrameComponentProps> = ({ children }) => {
-  return <div className="foo">{children}</div>;
+  return <>{children}</>;
 };
 
 export default FrameComponent;
