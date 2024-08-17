@@ -18,6 +18,7 @@ module.exports = {
     resolve: {
       alias: {
         '@lib': path.resolve(__dirname, 'lib'),
+        '@ui': path.resolve(__dirname, 'src/components/ui'),
       },
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
