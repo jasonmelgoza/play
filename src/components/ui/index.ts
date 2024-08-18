@@ -8,3 +8,5 @@ export { Button, buttonVariants } from './button';
 export { Calendar } from './calendar';
 export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './card';
 export { type CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from './carousel';
+export { ChartContainer, ChartTooltip, ChartTooltipContent, ChartLegend, ChartLegendContent, ChartStyle } from './chart';
+export { Checkbox } from './checkbox';
