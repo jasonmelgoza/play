@@ -10,3 +10,4 @@ export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
 export { type CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from './carousel';
 export { ChartContainer, ChartTooltip, ChartTooltipContent, ChartLegend, ChartLegendContent, ChartStyle } from './chart';
 export { Checkbox } from './checkbox';
+export { Collapsible, CollapsibleTrigger, CollapsibleContent } from './collapsible';
