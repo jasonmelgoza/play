@@ -11,3 +11,5 @@ export { type CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselPrev
 export { ChartContainer, ChartTooltip, ChartTooltipContent, ChartLegend, ChartLegendContent, ChartStyle } from './chart';
 export { Checkbox } from './checkbox';
 export { Collapsible, CollapsibleTrigger, CollapsibleContent } from './collapsible';
+export { Command, CommandDialog, CommandInput, CommandList, CommandEmpty, CommandGroup, CommandItem, CommandShortcut, CommandSeparator } from './command';
+export { Dialog, DialogPortal, DialogOverlay, DialogClose, DialogTrigger, DialogContent, DialogHeader, DialogFooter, DialogTitle, DialogDescription } from './dialog';
