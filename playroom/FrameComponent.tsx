@@ -15,7 +15,7 @@ const FrameComponent: React.FC<FrameComponentProps> = ({ children }) => {
     };
   }, []);
 
-  return <>{children}</>;
+  return <div>{children}</div>;
 };
 
 export default FrameComponent;

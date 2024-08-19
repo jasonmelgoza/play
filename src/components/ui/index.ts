@@ -25,3 +25,4 @@ export { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, Pagi
 export { Popover, PopoverTrigger, PopoverContent } from './popover';
 export { Progress } from './progress';
 export { RadioGroup, RadioGroupItem } from './radio-group';
+export { ResizablePanelGroup, ResizablePanel, ResizableHandle } from './resizable';
