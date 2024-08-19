@@ -29,3 +29,4 @@ export { ResizablePanelGroup, ResizablePanel, ResizableHandle } from './resizabl
 export { ScrollArea, ScrollBar } from './scroll-area';
 export { Select, SelectGroup, SelectValue, SelectTrigger, SelectContent, SelectLabel, SelectItem, SelectSeparator, SelectScrollUpButton, SelectScrollDownButton } from './select';
 export { Separator } from './separator';
+export { Sheet, SheetPortal, SheetOverlay, SheetTrigger, SheetClose, SheetContent, SheetHeader, SheetFooter, SheetTitle, SheetDescription } from './sheet';
