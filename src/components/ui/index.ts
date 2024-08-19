@@ -21,3 +21,7 @@ export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator } from './inpu
 export { Label } from './label';
 export { HoverCard, HoverCardTrigger, HoverCardContent } from './hover-card';
 export { Menubar, MenubarMenu, MenubarTrigger, MenubarContent, MenubarItem, MenubarSeparator, MenubarLabel, MenubarCheckboxItem, MenubarRadioGroup, MenubarRadioItem, MenubarPortal, MenubarSubContent, MenubarSubTrigger, MenubarGroup, MenubarSub, MenubarShortcut } from './menubar';
+export { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from './pagination';
+export { Popover, PopoverTrigger, PopoverContent } from './popover';
+export { Progress } from './progress';
+export { RadioGroup, RadioGroupItem } from './radio-group';
