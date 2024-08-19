@@ -19,3 +19,4 @@ export { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuIte
 export { Input } from './input';
 export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator } from './input-otp';
 export { Label } from './label';
+export { HoverCard, HoverCardTrigger, HoverCardContent } from './hover-card';
