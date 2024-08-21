@@ -5,17 +5,19 @@ module.exports = {
   prefix: '',
   safelist: [
     {
-      pattern: /^(w|h)-/, // Matches all width and height utilities
+      pattern: /^(w|h)-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
     {
-      pattern: /^p-/, // Matches all padding utilities
-      variants: ['sm', 'md', 'lg', 'xl', '2xl'], // Include responsive variants
+      pattern: /^(min|max)-(w|h)-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
-    {
-      pattern: /^(inline|block|flex|grid|hidden)$/, // Matches display utilities
-      variants: ['sm', 'md', 'lg', 'xl', '2xl'], // Include responsive variants
-    },
+    // Add pixel-based utilities
+    ...Array.from({ length: 1000 }, (_, i) => `w-[${i + 1}px]`),
+    ...Array.from({ length: 1000 }, (_, i) => `h-[${i + 1}px]`),
+    // Add percentage-based utilities
+    ...Array.from({ length: 100 }, (_, i) => `w-[${i + 1}%]`),
+    ...Array.from({ length: 100 }, (_, i) => `h-[${i + 1}%]`),
   ],
   theme: {
     container: {
