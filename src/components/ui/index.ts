@@ -33,4 +33,5 @@ export { Sheet, SheetPortal, SheetOverlay, SheetTrigger, SheetClose, SheetConten
 export { Skeleton } from './skeleton';
 export { Slider } from './slider';
 export { Switch } from './switch';
+export { Tabs, TabsList, TabsTrigger, TabsContent } from './tabs';
 export { Table, TableHeader, TableBody, TableFooter, TableHead, TableRow, TableCell, TableCaption } from './table';

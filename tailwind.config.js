@@ -18,6 +18,9 @@ module.exports = {
     // Add percentage-based utilities
     ...Array.from({ length: 100 }, (_, i) => `w-[${i + 1}%]`),
     ...Array.from({ length: 100 }, (_, i) => `h-[${i + 1}%]`),
+    // Add text alignment utilities
+    'text-left',
+    'text-right',
   ],
   theme: {
     container: {
