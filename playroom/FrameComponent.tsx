@@ -1,20 +1,21 @@
-import React, { ReactNode, useEffect } from 'react';
+import { useEffect } from 'react';
 import '../src/styles/global.css';
 
 interface FrameComponentProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
-const FrameComponent: React.FC<FrameComponentProps> = ({ children }) => {
+const useBodyClass = (className: string) => {
   useEffect(() => {
-    const className = 'antialiased';
     document.body.classList.add(className);
-
     return () => {
       document.body.classList.remove(className);
     };
-  }, []);
+  }, [className]);
+};
 
+const FrameComponent: React.FC<FrameComponentProps> = ({ children }) => {
+  useBodyClass('antialiased');
   return <>{children}</>;
 };
 
