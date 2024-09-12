@@ -1,12 +1,13 @@
 import React, { createContext, useContext, ReactNode, useEffect } from 'react';
+import { lightTheme, darkTheme } from './themes';
 
-type Theme = 'light' | 'dark';
+type Theme = typeof lightTheme | typeof darkTheme;
 
 interface ThemeContextProps {
   theme: Theme;
 }
 
-const ThemeContext = createContext<ThemeContextProps>({ theme: 'light' });
+const ThemeContext = createContext<ThemeContextProps>({ theme: lightTheme });
 
 export const useTheme = () => useContext(ThemeContext);
 
@@ -20,8 +21,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   children,
 }) => {
   useEffect(() => {
-    document.body.classList.remove('light', 'dark');
-    document.body.classList.add(theme);
+    document.body.classList.remove(lightTheme.className, darkTheme.className);
+    document.body.classList.add(theme.className);
   }, [theme]);
 
   return (

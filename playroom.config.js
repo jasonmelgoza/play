@@ -5,6 +5,7 @@ module.exports = {
   outputPath: './dist/playroom',
   frameComponent: './playroom/FrameComponent.tsx',
   snippets: './playroom/snippets.tsx',
+  themes: './src/themes/index.ts',
   title: 'Play UI Library',
   widths: [320, 768, 1024],
   port: 9000,

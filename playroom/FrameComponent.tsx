@@ -1,11 +1,11 @@
-import React from 'react';
-import { useEffect } from 'react';
-import '../src/styles/global.css';
+import React, { useEffect } from 'react';
 import { ThemeProvider } from '../src/ThemeContext';
+import { lightTheme, darkTheme } from '../src/themes';
+import '../src/styles/global.css';
 
 interface FrameComponentProps {
   children: React.ReactNode;
-  theme: 'light' | 'dark';
+  theme: typeof lightTheme | typeof darkTheme;
 }
 
 const useBodyClass = (className: string) => {
