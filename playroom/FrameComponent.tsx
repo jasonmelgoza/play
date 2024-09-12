@@ -1,8 +1,11 @@
+import React from 'react';
 import { useEffect } from 'react';
 import '../src/styles/global.css';
+import { ThemeProvider } from '../src/ThemeContext';
 
 interface FrameComponentProps {
   children: React.ReactNode;
+  theme: 'light' | 'dark';
 }
 
 const useBodyClass = (className: string) => {
@@ -14,9 +17,9 @@ const useBodyClass = (className: string) => {
   }, [className]);
 };
 
-const FrameComponent: React.FC<FrameComponentProps> = ({ children }) => {
+const FrameComponent: React.FC<FrameComponentProps> = ({ children, theme }) => {
   useBodyClass('antialiased');
-  return <>{children}</>;
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };
 
 export default FrameComponent;
