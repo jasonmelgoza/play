@@ -29,10 +29,6 @@ module.exports = {
       pattern: /^gap-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
-    {
-      pattern: /^border-/,
-      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
-    },
     // Pixel-based width and height utilities
     ...Array.from({ length: 1000 }, (_, i) => `w-[${i + 1}px]`),
     ...Array.from({ length: 1000 }, (_, i) => `h-[${i + 1}px]`),
