@@ -1,6 +1,6 @@
 # shadcn/ui playroom
 
-A small React design system playground built with [Playroom]() and (shadcn/ui)[https://ui.shadcn.com/].
+A small React design system playground built with [Playroom](https://github.com/seek-oss/playroom) and [shadcn/ui](https://ui.shadcn.com/).
 
 Install...
 
