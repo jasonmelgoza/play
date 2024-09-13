@@ -1,7 +1,7 @@
 {
-  "name": "play",
+  "name": "shadcn-ui-playroom",
   "version": "0.1.0",
-  "description": "A React design system",
+  "description": "A playground for a React design system using Playroom and Shadcn.",
   "author": "Jason Melgoza",
   "license": "MIT",
   "scripts": {

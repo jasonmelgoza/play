@@ -4,31 +4,78 @@ module.exports = {
   content: ['./playroom/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
   prefix: '',
   safelist: [
+    // Width and height utilities
     {
       pattern: /^(w|h)-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
+    // Min and max width/height utilities
     {
       pattern: /^(min|max)-(w|h)-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
+    // Padding utilities
     {
       pattern: /^p(\w?)-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
+    // Margin utilities
     {
       pattern: /^m(\w?)-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
-    // Add pixel-based utilities
+    // Gap utilities
+    {
+      pattern: /^gap-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    // Pixel-based width and height utilities
     ...Array.from({ length: 1000 }, (_, i) => `w-[${i + 1}px]`),
     ...Array.from({ length: 1000 }, (_, i) => `h-[${i + 1}px]`),
-    // Add percentage-based utilities
+    // Percentage-based width and height utilities
     ...Array.from({ length: 100 }, (_, i) => `w-[${i + 1}%]`),
     ...Array.from({ length: 100 }, (_, i) => `h-[${i + 1}%]`),
-    // Add text alignment utilities
+    // Text alignment utilities
     'text-left',
     'text-right',
+    'text-center',
+    'text-justify',
+    // Display utilities
+    'block',
+    'inline-block',
+    'inline',
+    'flex',
+    'inline-flex',
+    'grid',
+    'hidden',
+    // Overflow utilities
+    'overflow-hidden',
+    'overflow-visible',
+    'overflow-scroll',
+    'overflow-auto',
+    // Flex utilities
+    'flex-row',
+    'flex-col',
+    'flex-wrap',
+    'flex-nowrap',
+    'flex-grow',
+    'flex-shrink',
+    'items-start',
+    'items-end',
+    'items-center',
+    'items-baseline',
+    'items-stretch',
+    'justify-start',
+    'justify-end',
+    'justify-center',
+    'justify-between',
+    'justify-around',
+    'justify-evenly',
+    'self-auto',
+    'self-start',
+    'self-end',
+    'self-center',
+    'self-stretch',
   ],
   theme: {
     container: {

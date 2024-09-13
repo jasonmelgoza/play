@@ -6,14 +6,16 @@ module.exports = {
   frameComponent: './playroom/FrameComponent.tsx',
   snippets: './playroom/Snippets.tsx',
   themes: './src/themes/index.ts',
-  title: 'Shadcn Playroom',
-  widths: [320, 768, 1024],
+  title: 'Shadcn UI',
+  widths: [428, 768, 1024],
   port: 9000,
   openBrowser: true,
   exampleCode: `
-    <Button>
-      Hello World!
-    </Button>
+    <div className='p-8'>
+      <Button>
+        Hello World!
+      </Button>
+    </div>
   `,
   webpackConfig: () => ({
     resolve: {
