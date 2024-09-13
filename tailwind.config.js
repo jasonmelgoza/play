@@ -12,6 +12,14 @@ module.exports = {
       pattern: /^(min|max)-(w|h)-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
+    {
+      pattern: /^p(\w?)-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    {
+      pattern: /^m(\w?)-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
     // Add pixel-based utilities
     ...Array.from({ length: 1000 }, (_, i) => `w-[${i + 1}px]`),
     ...Array.from({ length: 1000 }, (_, i) => `h-[${i + 1}px]`),
