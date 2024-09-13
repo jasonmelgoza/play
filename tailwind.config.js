@@ -29,6 +29,21 @@ module.exports = {
       pattern: /^gap-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
+    // Font size utilities
+    {
+      pattern: /^text-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    // Font weight utilities
+    {
+      pattern: /^font-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    // Border utilities
+    {
+      pattern: /^border-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
     // Pixel-based width and height utilities
     ...Array.from({ length: 1000 }, (_, i) => `w-[${i + 1}px]`),
     ...Array.from({ length: 1000 }, (_, i) => `h-[${i + 1}px]`),
