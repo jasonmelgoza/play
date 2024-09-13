@@ -6,7 +6,7 @@ module.exports = {
   frameComponent: './playroom/FrameComponent.tsx',
   snippets: './playroom/snippets.tsx',
   themes: './src/themes/index.ts',
-  title: 'Play UI Library',
+  title: 'Shadcn Playroom',
   widths: [320, 768, 1024],
   port: 9000,
   openBrowser: true,
@@ -15,7 +15,6 @@ module.exports = {
       Hello World!
     </Button>
   `,
-  baseUrl: '/playroom/',
   webpackConfig: () => ({
     resolve: {
       alias: {

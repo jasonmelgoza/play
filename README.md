@@ -1,7 +1,7 @@
-# Play UI
+# Shadcn Playroom
 
 A small React design system.
 
-```base
+```bash
 playroom start
 ```
