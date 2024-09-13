@@ -29,17 +29,6 @@ module.exports = {
       pattern: /^gap-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
-    // Font size utilities
-    {
-      pattern: /^text-/,
-      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
-    },
-    // Font weight utilities
-    {
-      pattern: /^font-/,
-      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
-    },
-    // Border utilities
     {
       pattern: /^border-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
