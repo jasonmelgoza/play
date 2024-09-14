@@ -76,6 +76,11 @@ module.exports = {
     'self-end',
     'self-center',
     'self-stretch',
+    // Rounded utilities
+    'rounded',
+    'rounded-sm',
+    'rounded-md',
+    'rounded-lg',
   ],
   theme: {
     container: {
