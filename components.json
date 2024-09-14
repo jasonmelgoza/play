@@ -5,8 +5,8 @@
   "tsx": true,
   "tailwind": {
     "config": "tailwind.config.js",
-    "css": "src/styles/main.css",
-    "baseColor": "slate",
+    "css": "src/styles/globals.css",
+    "baseColor": "violet",
     "cssVariables": true,
     "prefix": ""
   },
