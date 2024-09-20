@@ -35,6 +35,15 @@ module.exports = {
     // Percentage-based width and height utilities
     ...Array.from({ length: 100 }, (_, i) => `w-[${i + 1}%]`),
     ...Array.from({ length: 100 }, (_, i) => `h-[${i + 1}%]`),
+    // Z-index utilities
+    'z-0',
+    'z-10',
+    'z-20',
+    // Background utilities
+    {
+      pattern: /^bg-/,
+      variants: ['primary', 'secondary', 'destructive', 'muted', 'accent', 'popover', 'card'],
+    },
     // Text alignment utilities
     'text-left',
     'text-right',
@@ -145,6 +154,9 @@ module.exports = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      backgroundImage: {
+        'background-pattern': "url('../images/background.svg')",
       },
     },
   },
