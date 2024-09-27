@@ -1,10 +1,6 @@
 import React from 'react';
-import { Chrome, Github, ArrowRight, ArrowUp, ArrowDown, ArrowLeft, Mail, User, File } from 'lucide-react';
+import { IconName, iconMap } from './icon-definitions';
 
-// Define the valid icon names directly
-type IconName = 'chrome' | 'github' | 'arrowRight' | 'arrowUp' | 'arrowDown' | 'arrowLeft' | 'mail' | 'user' | 'file';
-
-// Define a type for the common props
 type IconProps = {
   size?: number;
   color?: string;
@@ -12,26 +8,9 @@ type IconProps = {
   strokeWidth?: number;
 };
 
-// Map icon names to their respective components
-const iconMap: Record<IconName, React.ComponentType<IconProps>> = {
-  chrome: Chrome,
-  github: Github,
-  arrowRight: ArrowRight,
-  arrowUp: ArrowUp,
-  arrowDown: ArrowDown,
-  arrowLeft: ArrowLeft,
-  mail: Mail,
-  user: User,
-  file: File,
-};
-
 export const IconComponent: React.FC<{ 
   name: IconName; 
-  size?: number; 
-  color?: string; 
-  absoluteStrokeWidth?: boolean;
-  strokeWidth?: number;
-}> = ({
+} & IconProps> = ({
   name,
   size = 16,
   color = 'currentColor',
@@ -53,5 +32,4 @@ export const IconComponent: React.FC<{
   />;
 };
 
-// Export the IconComponent
 export default IconComponent;
