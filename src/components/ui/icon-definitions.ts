@@ -10,6 +10,8 @@ import {
   BookmarkCheck,
   Check,
   Chrome,
+  Copy,
+  Clipboard,
   File,
   FileCheck,
   Folder,
@@ -17,6 +19,7 @@ import {
   Github,
   Mail,
   User,
+  X
 } from 'lucide-react';
 
 export type IconName =
@@ -31,13 +34,15 @@ export type IconName =
   | 'bookmarkCheck'
   | 'check'
   | 'chrome'
+  | 'copy'
   | 'file'
   | 'fileCheck'
   | 'folder'
   | 'folderCheck'
   | 'github'
   | 'mail'
-  | 'user';
+  | 'user'
+  | 'x';
 
 export const iconMap = {
   arrowDown: ArrowDown,
@@ -51,6 +56,8 @@ export const iconMap = {
   bookmarkCheck: BookmarkCheck,
   check: Check,
   chrome: Chrome,
+  copy: Copy,
+  clipboard: Clipboard,
   file: File,
   fileCheck: FileCheck,
   folder: Folder,
@@ -58,4 +65,5 @@ export const iconMap = {
   github: Github,
   mail: Mail,
   user: User,
+  x: X
 } as const;
