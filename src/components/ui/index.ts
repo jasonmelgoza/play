@@ -36,3 +36,4 @@ export { Slider } from './slider';
 export { Switch } from './switch';
 export { Tabs, TabsList, TabsTrigger, TabsContent } from './tabs';
 export { Table, TableHeader, TableBody, TableFooter, TableHead, TableRow, TableCell, TableCaption } from './table';
+export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './tooltip';
