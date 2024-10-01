@@ -6,7 +6,19 @@ module.exports = {
   safelist: [
     // Combined width, height, min/max, padding, margin, and gap utilities
     {
-      pattern: /^(w|h|min-w|min-h|max-w|max-h|p|m|gap)-/,
+      pattern: /^(w|h|min-w|min-h|max-w|max-h|gap)-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+
+    // Padding utilities
+    {
+      pattern: /^p(\w?)-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+
+    // Margin utilities
+    {
+      pattern: /^m(\w?)-/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
 
