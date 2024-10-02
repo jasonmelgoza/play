@@ -23,9 +23,11 @@ import {
   FolderCheck,
   Github,
   Mail,
+  RefreshCcw,
   Reply,
   ReplyAll,
   Trash,
+  Trash2,
   User,
   X
 } from 'lucide-react';
@@ -55,9 +57,11 @@ export type IconName =
   | 'folderCheck'
   | 'github'
   | 'mail'
+  | 'refreshCcw'
   | 'reply'
   | 'replyAll'
   | 'trash'
+  | 'trash2'
   | 'user'
   | 'x';
 
@@ -86,9 +90,11 @@ export const iconMap = {
   folderCheck: FolderCheck,
   github: Github,
   mail: Mail,
+  refreshCcw: RefreshCcw,
   reply: Reply,
   replyAll: ReplyAll,
   trash: Trash,
+  trash2: Trash2,
   user: User,
   x: X
 } as const;
