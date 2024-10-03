@@ -7,6 +7,7 @@ type IconProps = {
   absoluteStrokeWidth?: boolean;
   strokeWidth?: number;
   ariaHidden?: boolean;
+  focusable?: boolean;
 };
 
 export const IconComponent: React.FC<{ 
@@ -18,6 +19,7 @@ export const IconComponent: React.FC<{
   absoluteStrokeWidth = false,
   strokeWidth = 2,
   ariaHidden = true,
+  focusable = false,
 }) => {
   const IconNode = iconMap[name];
 
@@ -32,6 +34,7 @@ export const IconComponent: React.FC<{
     absoluteStrokeWidth={absoluteStrokeWidth} 
     strokeWidth={strokeWidth}
     aria-hidden={ariaHidden}
+    focusable={focusable}
   />;
 };
 
