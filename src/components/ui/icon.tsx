@@ -6,6 +6,8 @@ type IconProps = {
   color?: string;
   absoluteStrokeWidth?: boolean;
   strokeWidth?: number;
+  ariaHidden?: boolean;
+  focusable?: boolean;
 };
 
 export const IconComponent: React.FC<{ 
@@ -16,6 +18,8 @@ export const IconComponent: React.FC<{
   color = 'currentColor',
   absoluteStrokeWidth = false,
   strokeWidth = 2,
+  ariaHidden = true,
+  focusable = false,
 }) => {
   const IconNode = iconMap[name];
 
@@ -29,6 +33,8 @@ export const IconComponent: React.FC<{
     color={color} 
     absoluteStrokeWidth={absoluteStrokeWidth} 
     strokeWidth={strokeWidth}
+    aria-hidden={ariaHidden}
+    focusable={focusable}
   />;
 };
 
